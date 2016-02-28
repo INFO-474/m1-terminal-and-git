@@ -115,3 +115,5 @@ Here are additional `git` commands that allow you to interact easily with GitHub
 | `git push origin master`  | Pushes all commits on the `master` branch made since the last push to another repository (`origin`), typically across the network (e.g., to GitHub)  |
 | `git pull`  | Pulls all commits made since the last pull from another repository, and attempts to merge those changes into your current files. |
 | `git config` | Configure your GitHub account. You should run `git config --user.name "Your Full Name" and `git config --user.email your-github-email` to initially set up. |
+
+To practice using these basic commands, see [exercise-2](exercise-2).
