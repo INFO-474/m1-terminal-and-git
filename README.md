@@ -114,6 +114,6 @@ Here are additional `git` commands that allow you to interact easily with GitHub
 | `git clone REPO-URL` | Creates a new copy of a source repository, which typically exists on a remote server. Use this when you want to clone down a GitHub repository. This command will create a new subdirectory with the same name as the source repository. |
 | `git push origin master`  | Pushes all commits on the `master` branch made since the last push to another repository (`origin`), typically across the network (e.g., to GitHub)  |
 | `git pull`  | Pulls all commits made since the last pull from another repository, and attempts to merge those changes into your current files. |
-| `git config` | Configure your GitHub account. You should run `git config --user.name "Your Full Name" and `git config --user.email your-github-email` to initially set up. |
+| `git config` | Configure your GitHub account. You should run `git config --global user.name "Your Full Name" and `git config --global user.email your-github-email` to initially set up. |
 
 To practice using these basic commands, see [exercise-2](exercise-2).
