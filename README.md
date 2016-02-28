@@ -40,6 +40,10 @@ Here is a short-list of commands you'll use to navigate your file structure and 
 | `rm file` | remove (delete) a file |
 
 
-**A quick tip**: if you start typing a command or a directory name, you can hit the `tab` key to auto-complete the word.  
+**Some quick tips**:
+
+- If you start typing a command or a directory name, you can hit the `tab` key to auto-complete the word.  
+- You can use the tilde (`~`) to signify the home directory of the logged in user.  In other words, instead of typing `cd /Users/username/Documents`, you can just type `cd ~/Documents`.  This both saves time, and makes it easier to write code that runs on multiple machines.
+- To change directory to the parent directory one level above the current directory, use the `..` shorthand.  For example, to enter a sibling directory, you may say `cd ../sibling`.   
 
 To practice using these basic commands, see [exercise-1](exercise-1).
