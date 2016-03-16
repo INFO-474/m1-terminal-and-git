@@ -30,7 +30,7 @@ In this module, we'll review the basics of using the command line terminal, as w
 Here are some helpful outside resources:
 
 - [Introduction to the mac command line](http://www.macworld.co.uk/feature/mac-software/get-more-out-of-os-x-terminal-3608274/)
-- [Mac terminal cheatsheet](https://github.com/0nn0/terminal-mac-cheatsheet/wiki/Terminal-Cheatsheet-for-Mac-(-basics-)
+- [Mac terminal cheatsheet](https://github.com/0nn0/terminal-mac-cheatsheet/wiki/Terminal-Cheatsheet-for-Mac-(-basics-))
 - [Try Git](https://try.github.io/levels/1/challenges/1): An interactive tutorial for learning `git`
 - [Git Documentation](https://git-scm.com/documentation)
 - [Setting up git](https://help.github.com/articles/set-up-git/) (with GitHub)
