@@ -7,7 +7,21 @@ In this module, we'll review the basics of using the command line terminal, as w
 - Introduce the syntax of version control using `git`
 - Set up `GitHub` as a remote host for your `git` managed projects
 
-** Note **: The terminal instructions are written for mac users, and may require different syntax for other operating systems such as Windows or Linux.  For Windows, you may want to download a command line interface such as [Git Bash] [Powershell](https://www.microsoft.com/en-us/download/details.aspx?id=40855).
+**Note**: The terminal instructions are written for mac users, and may require different syntax for other operating systems such as Windows or Linux.  For Windows, you may want to download a command line interface such as [Git Bash](https://git-for-windows.github.io/) or [Powershell](https://www.microsoft.com/en-us/download/details.aspx?id=40855).
+
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Contents**
+
+- [Resources](#resources)
+- [Terminal Use](#terminal-use)
+  - [Basic Commands](#basic-commands)
+  - [Running a local server](#running-a-local-server)
+- [Version control](#version-control)
+  - [Git](#git)
+  - [GitHub](#github)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ## Resources
 Here are some helpful outside resources:
@@ -40,7 +54,7 @@ Here is a short-list of commands you'll use to navigate your file structure and 
 | `cd DIRNAME` | change directory to DIRNAME |
 | `clear`  | clears terminal  |
 | `history`  | shows history of commands |
-| `history &#124; grep SEARCH`  | shows history that matches the SEARCH term|
+| <code>history &#124; grep SEARCH</code>  | shows history that matches the SEARCH term|
 | `ls`  | list contents of diretory  |
 | `ls -a`  | list all contents  |
 | `mkdir DIRNAME` | make a directory with name DIRNAME|
