@@ -20,6 +20,9 @@ In this module, we'll review the basics of using the command line terminal, as w
 - [Version control](#version-control)
   - [Git](#git)
   - [GitHub](#github)
+- [Hosting](#hosting)
+  - [UW Student Hosting](#uw-student-hosting)
+  - [Hosting on GitHub](#hosting-on-github)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -34,6 +37,9 @@ Here are some helpful outside resources:
 - [Git command line reference](https://git-scm.com/docs)
 - [Git Introductory Videos](http://git-scm.com/videos)
 - [Git cheatsheet](https://training.github.com/kit/downloads/github-git-cheat-sheet.pdf)
+- [Hosting with GitHub Pages](https://help.github.com/articles/creating-project-pages-manually/)
+- [UW Student Hosting](http://itconnect.uw.edu/connect/web-publishing/shared-hosting/activating-shared-web-hosting/)
+- [UW SSH Connection](https://itconnect.uw.edu/connect/web-publishing/shared-hosting/ssh/)
 
 ## Terminal Use
 In order to move forward in this course, there are a few basic commands you'll need to know on the command line.  We'll use the terminal for two primary purposes:
@@ -131,3 +137,49 @@ Here are additional `git` commands that allow you to interact easily with GitHub
 | `git config` | Configure your GitHub account. You should run `git config --global user.name "Your Full Name" and `git config --global user.email your-github-email` to initially set up. |
 
 To practice using these basic commands, see [exercise-2](exercise-2).
+
+## Hosting
+Once you build an interactive data visualization, you'll obviously want some way to share it with the world. In order to accomplish this, you will need to **host** your code on a web-server, which will provide you with a URL at which you (and others) can access your project. There are myriad options for web-hosting, two of which we'll describe here.
+
+### UW Student Hosting
+If you are a UW student, the University provides free student/staff/faculty web-hosting. Using the hosting services is quite painless once you get it set up.
+
+1. [activate your web-host](http://itconnect.uw.edu/connect/web-publishing/shared-hosting/activating-shared-web-hosting/), which you do online through the UW-IT website.
+2. [Connect to your host](https://itconnect.uw.edu/connect/web-publishing/shared-hosting/ssh/), which you can easily do on your terminal (if you're a mac user), or via an SSH client such as [PuTTy](http://www.chiark.greenend.org.uk/~sgtatham/putty/). Connect via the terminal using the following command:
+
+```
+# Replace NETID with your uw net id and SERVER with the name of your server (dante, or homer)
+ssh NETID@SERVER.u.washington.edu
+```
+
+3. Once you've connected to your server, navigate to the folder that holds your publicly availabe projects, and pull down the project from GitHub:
+
+```
+# Navigate to public directory
+cd public_html
+
+# Clone down the project (if it's the first time)
+git clone https://github.com/USER-NAME/PROJECT-NAME.git
+
+# Whenever you make changes, simply pull down the changes
+git pull https://github.com/USER-NAME/PROJECT-NAME.git
+```
+
+### Hosting on GitHub
+An awesome features of GitHub that we haven't discussed is that it will actually host webpages for you auto-magically! In particular, it will render an `index.html` file on a GitHub Pages branch with name `gh-pages`. So, all we need to do to get this HTML page up on the web for **anyone** to see is create a branch called `gh-pages` and push it up to GitHub. Here's the syntax you'll want to use in your terminal:
+
+```
+# Get into your repository
+cd project-name
+
+# Add and commit changes to your current (master) branch
+git add .
+git commit -m "Commit message goes in here"
+
+# Create and checkout a new branch called 'gh-pages'
+git checkout -b gh-pages
+
+# Push all changes (including your new branch) up to GitHub
+git push --all
+```
+You should now see your `index.html` file up on the web at `your-username.github.io/project-name`. Keep in mind, if you make change to your `master` branch, you'll need to make those same changes in your `gh-pages` branch in order for them to be reflected in the live version hosted by GitHub.
